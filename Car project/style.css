@@ -1,0 +1,65 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+
+
+.con{
+    background-image: url(img/road.jpg);
+    height: 800vw;
+animation: road 1s infinite;
+background-repeat: repeat;
+width: 800vw;
+
+}
+
+
+.car {
+    background-image: url(img/car.png);
+    height: 182px;
+    width: 666px;
+    position: absolute;
+    top: 205px;
+    background-repeat: no-repeat;
+    z-index: 3;
+
+}
+
+
+.tire1 img{
+    height: 178px;
+    position: absolute;
+    left: 421px;
+    top: 49px;
+    animation: tire1 .2s infinite;
+}
+
+
+.tire2 img{
+    height: 178px;
+    position: absolute;
+    left: 18px;
+    top: 43px;
+    animation: tire1 .2s infinite;
+
+}
+
+
+@keyframes tire1
+{
+
+100%{
+    transform: rotate(360deg);
+}
+
+}
+
+
+@keyframes road{
+100%{
+transform: translateX(-500vw);
+
+}
+
+}
